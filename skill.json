@@ -1,0 +1,34 @@
+{
+  "name": "genpark-ai-model-consensus-fact-verification-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-LLM consensus fact verification, hallucination filtering & evidence scoring engine.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "fact-verification",
+    "model-consensus",
+    "hallucination-filter",
+    "evidence-score"
+  ],
+  "inputs": {
+    "claim_statement": {
+      "type": "string"
+    },
+    "participating_models": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "verdict": {
+      "type": "string"
+    },
+    "consensus_score_pct": {
+      "type": "number"
+    },
+    "dissenting_views": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
